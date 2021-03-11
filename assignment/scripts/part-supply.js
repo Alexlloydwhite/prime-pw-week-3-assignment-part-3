@@ -33,10 +33,11 @@ console.log(supplyChanges);
 console.log('6. supplyChanges Loop');
 
 for (i=0; i < supplyChanges.length; i++) {
-  console.log(supplyChanges[i])
   if ( supplyChanges[i] > 0 ) {
+    console.log(supplyChanges[i])
     console.log(`Added ${supplyChanges[i]} parts.`);
   } else if ( supplyChanges[i] < 0 ) {
+      console.log(supplyChanges[i])
       console.log(`Part count ${supplyChanges[i]}.`);
   }
 }
