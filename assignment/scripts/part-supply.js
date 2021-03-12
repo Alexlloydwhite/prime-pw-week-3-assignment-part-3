@@ -34,10 +34,8 @@ console.log('6. supplyChanges Loop');
 
 for (i=0; i < supplyChanges.length; i++) {
   if ( supplyChanges[i] > 0 ) {
-    console.log(supplyChanges[i])
     console.log(`Added ${supplyChanges[i]} parts.`);
   } else if ( supplyChanges[i] < 0 ) {
-      console.log(supplyChanges[i])
       console.log(`Part count ${supplyChanges[i]}.`);
   }
 }
@@ -47,10 +45,38 @@ console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
 console.log('7. Showing supplyChanges with "for of" loop');
 
+for (partsChanged of supplyChanges){
+  if (partsChanged < 0){
+    console.log(`Part count ${partsChanged}.`)
+  } else if (partsChanged > 0){
+    console.log(`Added ${partsChanged} parts.`)
+  }
+}
 
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
 
+let index = -1
+while (index < supplyChanges.length)
+{ index++;
+    if (supplyChanges[index] > 0)
+  {
+    console.log(`Added ${supplyChanges[index]} parts.`);
+  }
+    else if (supplyChanges[index] < 0)
+  {
+    console.log(`Part count ${supplyChanges[index]}.`);
+  }
+}
+// To whomever is grading this: In your opinion, which code is cleaner Q7 or Q8?
+// How would you write this?
+
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('9. Total supplies available is:');
+
+let total = 0;
+for (var i  = 0; i < supplyChanges.length; i++){
+total  += supplyChanges[i];
+}
+console.log(total);
