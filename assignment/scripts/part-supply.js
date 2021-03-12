@@ -6,7 +6,6 @@ console.log('****** Part Supply *******');
 console.log('1. Number of partsNeeded:');
 let partsNeeded = 40
 console.log(partsNeeded);
-
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
@@ -15,7 +14,6 @@ console.log(supplyChanges);
 // 3. Console log the value of 'supplyChanges' at index 2
 console.log('3. Item at index 2 is:');
 console.log(supplyChanges[2]);
-
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges'
 //    array & console.log the value removed.
 console.log('4. Removed item:');
@@ -31,7 +29,6 @@ console.log(supplyChanges);
 //    - if the value is 0, skip it. Do not log it to the console.
 //    - if the value is negative, format the log as 'Part count -x.'
 console.log('6. supplyChanges Loop');
-
 for (i=0; i < supplyChanges.length; i++) {
   if ( supplyChanges[i] > 0 ) {
     console.log(`Added ${supplyChanges[i]} parts.`);
@@ -39,7 +36,6 @@ for (i=0; i < supplyChanges.length; i++) {
       console.log(`Part count ${supplyChanges[i]}.`);
   }
 }
-
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
@@ -52,11 +48,9 @@ for (partsChanged of supplyChanges){
     console.log(`Added ${partsChanged} parts.`)
   }
 }
-
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
-
-let index = -1
+let index = -1;
 while (index < supplyChanges.length)
 { index++;
     if (supplyChanges[index] > 0)

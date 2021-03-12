@@ -1,1 +1,6 @@
 /* give your assignment a fun background color */
+body {
+ background-image: url("https://images-na.ssl-images-amazon.com/images/I/91HiqSzRYwL._AC_SL1500_.jpg");
+ background-color: #cccccc;
+ background-size: auto;
+}
