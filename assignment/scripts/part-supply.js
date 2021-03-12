@@ -62,8 +62,7 @@ while (index < supplyChanges.length)
     console.log(`Part count ${supplyChanges[index]}.`);
   }
 }
-// To whomever is grading this: In your opinion, which code is cleaner Q7 or Q8?
-// How would you write this?
+
 
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
